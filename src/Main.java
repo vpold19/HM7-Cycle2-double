@@ -113,13 +113,12 @@ public class Main {
 
     public static void task8() {
         System.out.println("Задание 8");
-        int firstFlyYear = 0;
         int period = 79;
         int yearNow = 2023;
         int flyStart = yearNow - 200;//2023 г - 200
         int flyEnd = yearNow + 100;//2023 г +100
         for (int year = flyStart; year <= flyEnd; year = year + 1) {
-            if (year % period == firstFlyYear) {
+            if (year % period == 0) {
                 System.out.println(year);
             }
         }
